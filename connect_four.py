@@ -149,16 +149,17 @@ def desenhar_tabuleiro(grafico, tabuleiro, ficha_caindo=None):
 
 
 def desenhar_mensagem_resultado(grafico, texto):
+    centro_y = ALTURA_TABULEIRO / 2
     grafico.draw_rectangle(
-        (LARGURA_TABULEIRO / 2 - 125, ALTURA_TABULEIRO - 38),
-        (LARGURA_TABULEIRO / 2 + 125, ALTURA_TABULEIRO - 4),
+        (LARGURA_TABULEIRO / 2 - 125, centro_y - 20),
+        (LARGURA_TABULEIRO / 2 + 125, centro_y + 20),
         fill_color="#FFFFFF",
         line_color="#1F2937",
         line_width=2,
     )
     grafico.draw_text(
         texto,
-        (LARGURA_TABULEIRO / 2, ALTURA_TABULEIRO - 21),
+        (LARGURA_TABULEIRO / 2, centro_y),
         color="#1F2937",
         font=("Arial", 19, "bold"),
     )
