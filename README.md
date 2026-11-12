@@ -43,6 +43,14 @@ Na mesma pasta, inicie o jogo com:
 python connect_four.py
 ```
 
+## Testes
+
+Os testes automatizados cobrem a criação do tabuleiro, a inserção de fichas, as vitórias e o empate. Execute-os com:
+
+```bash
+python -m unittest -v test_connect_four.py
+```
+
 ## Como jogar
 
 1. Clique no botão numerado da coluna onde deseja colocar sua ficha.
@@ -57,6 +65,8 @@ python connect_four.py
 | --- | --- |
 | `connect_four.py` | Regras do jogo, interface, animações e execução da partida. |
 | `requirements.txt` | Dependências Python do projeto. |
+| `test_connect_four.py` | Testes automatizados das regras do jogo. |
+| `.gitignore` | Arquivos Python temporários ignorados pelo Git. |
 
 ## Funções principais
 
